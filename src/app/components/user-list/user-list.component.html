@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="card" id="card" *ngFor="let user of users">
+            <div class="card-body" id="cardBody">
+                <h5 class="card-title">Name:</h5>
+                <p class="card-text">{{user.name}}</p>
+                <h5 class="card-title">Username:</h5>
+                <p class="card-text">{{user.username}}</p>
+                <h5 class="card-title">Email:</h5>
+                <p class="card-text">{{user.email}}</p>
+                <h5 class="card-title">Address:</h5>
+                <p class="card-text">{{user.address.city}}</p>
+                <p class="card-text">{{user.address.street}}</p>
+                <p class="card-text">{{user.address.suite}}</p>
+                <p class="card-text">{{user.address.zipcode}}</p>
+                <a href="#" (click)="deleteUser(user.id)" class="btn btn-danger">Delete: {{user.username}}</a>
+            </div>
+        </div>
+
+    </div>
+</div>
