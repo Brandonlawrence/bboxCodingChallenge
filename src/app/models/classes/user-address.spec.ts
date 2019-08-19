@@ -1,7 +1,7 @@
-import { UserAddress } from './user-address';
+import { Address } from './user-address';
 
 describe('UserAddress', () => {
   it('should create an instance', () => {
-    expect(new UserAddress()).toBeTruthy();
+    expect(new Address()).toBeTruthy();
   });
 });

@@ -7,16 +7,15 @@ Injectable({
 
 export class SharedService {
 
-  sharingData: User[];
+  users: User[];
 
   saveData(users){
     
-    this.sharingData = users;
+    this.users = users;
    
   }
   getData():User[]{
-      console.log("SHARING ", this.sharingData);
-    return this.sharingData;
+    return this.users;
   }
 
 }
